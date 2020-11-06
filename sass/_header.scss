@@ -1,0 +1,53 @@
+.header{
+    background-color: $headerColor;
+    color: $fontColor;
+    .nav{
+        position: relative;   
+     
+    }
+    .container{
+        @include breakpoint-down(medium){
+            line-height: 2;
+            justify-content: center ;
+         }
+    }
+    
+    h1{
+        white-space: nowrap;
+    }
+   
+    .menu{
+       min-width:258px ;
+        a{
+            position: relative;
+            text-decoration: none;
+            color: $unselectedColor;
+            transition: color 300ms ease-in-out;
+            &:not(:last-child){
+                margin-right: 3em;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                height: 10px;
+                left: 0;
+                right: 0;
+                bottom:- 1.4rem;
+                background:$fontColor ;
+                border-radius: 25px;
+                opacity: 0;
+                transition:opacity 300ms ease-in-out ;
+            }
+        }
+        a:hover{
+            color:$fontColor ;
+            &::before{
+                opacity: 1;
+            }
+        }
+     
+      
+    }
+   
+   
+}
