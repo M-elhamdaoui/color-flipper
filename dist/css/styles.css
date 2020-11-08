@@ -5,6 +5,8 @@ html {
 
 *, *::after, *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -113,5 +115,56 @@ h1 {
 
 .header .menu a:hover::before {
   opacity: 1;
+}
+
+.color {
+  background-color: red;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.color__container {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.color .center {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+.color .center h2 {
+  color: #FFFACD;
+  background-color: #F0B32F;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  border-radius: 150px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.color .center span {
+  color: #401C26;
+}
+
+.color .button .btn {
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: #C74859;
+  border: none;
+  color: #FFFACD;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.75rem;
+  margin-top: 4rem;
+  border-radius: 50px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=styles.css.map */
