@@ -4,8 +4,8 @@ const colors =["INDIANRED","RED","SALMON","DARKSALMON","PINK","LIGHTPINK","HOTPI
  const btn2 = document.querySelector("#btnH");
  const colorContainer =document.querySelector(".color");
  const color =document.querySelector("#color");
- let a =255;
- console.log(a.toString(16));
+
+ 
 
 
   btn1.addEventListener("click",function(){
@@ -14,7 +14,7 @@ const colors =["INDIANRED","RED","SALMON","DARKSALMON","PINK","LIGHTPINK","HOTPI
     color.innerHTML=co;
   })
 
-
+  
 
 
 
